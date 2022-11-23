@@ -1,1 +1,1 @@
-Das ist das Quiz von dem ersten Praktikumstag
+Das sind die Sachen die ich im Praktikum geschrieben habe
