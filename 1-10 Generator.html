@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Leons Zufallgenerator (1-10)</h2>
+
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,10)">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+</script>
+
+</body>
+</html>
