@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
+    <p id="demo"></p>
+    <button onClick="window.location.reload();">Restart</button>
+ <script>
+    let choices = []
+    let name;
+
+do {
+    name=prompt("Enter Decision");
+    console.log(name);
+    if(name !== null) {
+        choices.push(name);
+    }
+} while (name !== null)
+
+    let num = Math.floor(Math.random() * choices.length);
+     
+    alert(choices[num]);
+
+ </script>
+</body>
+<style>
+</style>
+</html>
