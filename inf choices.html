@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <body>
+
+    <p id="elements"></p>
     <p id="demo"></p>
+
     <button onClick="window.location.reload();">Restart</button>
- <script>
-    let choices = []
-    let name;
+    h
+    <script>
 
-do {
-    name=prompt("Enter Decision");
-    console.log(name);
-    if(name !== null) {
-        choices.push(name);
-    }
-} while (name !== null)
+        let choices = []
+        let name;
 
-    let num = Math.floor(Math.random() * choices.length);
-     
-    alert(choices[num]);
+        do {
+            name = prompt("Enter Decision");
+            console.log(name);
+            choices.push(name);
+        } while (name !== null)
 
- </script>
+        document.getElementById("demo").innerHTML = choices;
+        function getRandomElement(werte) {
+            let num = Math.floor(Math.random() * werte.length);
+            return werte[num]
+        }
+
+        document.getElementById("elements").innerHTML = choices
+
+    </script>
 </body>
 <style>
 </style>
+
 </html>
