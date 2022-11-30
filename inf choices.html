@@ -9,7 +9,6 @@
     <p id="demo"></p>
 
     <button onClick="window.location.reload();">Restart</button>
-    h
     <script>
 
         let choices = []
@@ -17,17 +16,18 @@
 
         do {
             name = prompt("Enter Decision");
-            console.log(name);
-            choices.push(name);
+            if (name !== null) {
+                choices.push(name);
+            }
         } while (name !== null)
 
         document.getElementById("demo").innerHTML = choices;
+        document.getElementById("elements").innerHTML = getRandomElement(choices);
+
         function getRandomElement(werte) {
             let num = Math.floor(Math.random() * werte.length);
-            return werte[num]
+            return werte[num];
         }
-
-        document.getElementById("elements").innerHTML = choices
 
     </script>
 </body>
