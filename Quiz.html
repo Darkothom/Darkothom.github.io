@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        let count=0;
+        let number=prompt("How many days are in a year?");
+        if(number==="365"){
+            console.log("Correct");
+            count=count+1;
+        }else{
+            console.log("False (Correct:365)");
+        }
+        let name=prompt("Who discovered gravity?");
+        if(name==="Isaac Newton"){
+            console.log("Correct");
+            count=count+1;
+        }else{
+            console.log("False (Correct:Isaac Newton");
+        }
+        let color=prompt("Which color is not in a rainbow?");
+        if(color==="Black"){
+            console.log("Correct");
+            count=count+1
+        }else{
+            console.log("False (Correct:Black)");
+        }
+        if(count===0){
+        alert("Correct Answers: 0")
+        }
+        if(count===1){
+        alert("Correct Answers: 1")
+        }
+        if(count===2){
+        alert("Correct Answers: 2")
+        }
+        if(count===3){
+            alert("Correct Answers: 3")
+        }
+    </script>
+</body>
+</html>
