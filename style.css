@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(228, 98, 93);
+}
+
+#chosenChoice {
+    background: rgba(200, 0, 0, 0);
+    font-family: Arial
+}
+
+#allChoices {
+    background: rgba(200, 0, 0, 0);
+    font-family: Arial
+}
+
+#title {
+    text-decoration: underline;
+    position: fixed;
+    top: -40px;
+    font-size: 450%;
+}
+
+#newChoice {
+    position: fixed;
+    top: 420px;
+    font-size: 200%;
+}
+
+#buttonAdd {
+    position: fixed;
+    right: 1020px;
+    top: 475px;
+    font-size: 200%;
+}
+
+#buttonDone {
+    position: fixed;
+    right: 820px;
+    top: 475px;
+    font-size: 200%;
+}
+
+#buttonRestart {
+    position: fixed;
+    right: 1800px;
+    font-size: 200%;
+}
+
+#chosenChoice {
+    position: absolute;
+    top: 170px;
+    font-size: 370%;
+}
+
+#allChoices {
+    position: absolute;
+    top: 650px;
+    font-size: 250%;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
